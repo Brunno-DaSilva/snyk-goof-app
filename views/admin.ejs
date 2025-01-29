@@ -35,12 +35,12 @@
     </h1>
   </div>
 
-  <div id="list">
+  <div id="list-admin">
     <form action="/login" method="post" accept-charset="utf-8">
       <% if( granted==false ){ %>
         <div class="login-container">
           <center>username</center>
-          <input class="input" type="text" name="username" />
+          <input id="username-focus" class="input" type="text" name="username" />
           <br />
           <center>password</center>
           <input class="input" type="password" name="password" />
@@ -52,3 +52,8 @@
         <% } %>
     </form>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("username-focus").focus();
+    });
+  </script>

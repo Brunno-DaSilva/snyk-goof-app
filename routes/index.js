@@ -77,6 +77,7 @@ exports.login = function (req, res, next) {
 exports.admin = function (req, res, next) {
   return res.render("admin", {
     title: "Admin Access Granted",
+    subhead: "Welcome to the admin page",
     granted: true,
   });
 };

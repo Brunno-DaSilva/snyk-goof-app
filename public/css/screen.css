@@ -209,6 +209,12 @@ body {
 /* line 32, ../sass/screen.sass */
 #list {
   margin-top: 1rem;
+  padding: 2rem 0 0 0;
+  align-self: center;
+}
+
+#list-admin {
+  margin-top: 1rem;
   width: 80vw;
   padding: 2rem 0 0 0;
   align-self: center;
@@ -216,10 +222,16 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0.25rem;
-  background-color: #eeeeee;
 }
 
-#list form {
+#list-admin h2 {
+  font-size: 2rem;
+  color: #471694;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+#list-admin form {
   width: 50%;
 }
 
@@ -231,7 +243,7 @@ body {
   padding: 3rem 0;
 }
 .login-container input {
-  border: 1px solid #eeeeee;
+  border: 3px solid #eeeeee;
 }
 
 .login-container center {

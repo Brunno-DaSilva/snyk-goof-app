@@ -152,7 +152,7 @@ summary {
 
 /* line 7, ../sass/screen.sass */
 body {
-  font: 14px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font: 14px "Poppins", serif;
 }
 
 .about {
@@ -161,7 +161,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .about h1 {
   font-size: 2rem;
@@ -249,7 +249,7 @@ body {
 .input,
 .update-input {
   color: #666666;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-family: "Poppins", serif;
   font-size: 1.2rem;
   height: 2rem;
   border: 3px solid transparent;
@@ -285,7 +285,7 @@ body {
 .update-link {
   display: inline;
   float: left;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-family: "Poppins", serif;
   color: #666666;
   text-decoration: none;
   overflow: hidden;
@@ -401,13 +401,15 @@ body {
 
 #footer-wrap a {
   text-decoration: none;
-  color: #666666;
   margin: 0 1rem 0 1rem;
 }
 
 /* My Custom CSS*/
 
-.btn_return {
+.footer-wrap button {
+  color: #ffffff;
+}
+.button-primary {
   margin-top: 2.5rem;
   background-color: #145deb;
   border: none;
@@ -420,7 +422,7 @@ body {
   line-height: 28px;
 }
 
-.btn_return a {
+.button-primary a {
   background-color: #145deb;
   color: white;
   text-align: center;
@@ -428,4 +430,66 @@ body {
   display: inline-block;
   font-size: 1rem;
   text-decoration: none;
+}
+
+/*================================
+About Page
+==================================*/
+
+.about-content {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+.diagram,
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.about h2 {
+  color: #f4be27;
+  font-size: 2rem;
+  padding: 1rem 2rem 0 2rem;
+  text-shadow: 0 1px 1px white;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  width: 60%;
+  height: 70%;
+}
+
+ul.tech-stack {
+  list-style-type: none;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul.tech-stack li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul.tech-stack li strong {
+  color: #0073e6;
+}
+
+ul.tech-stack li:last-child {
+  font-style: italic;
+  color: #555;
 }

@@ -387,7 +387,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://snyk.io/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Fsnyk%2Fimage%2Fupload%2Fv1723050301%2Fwebsite-heroes%2Fbackground-images%2Fhero-homepage-2024.jpg&w=2560&q=75");
+  background-image: url("../images/hero-homepage-2024.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -492,4 +492,18 @@ ul.tech-stack li strong {
 ul.tech-stack li:last-child {
   font-style: italic;
   color: #555;
+}
+
+#uploadForm input[type="submit"] {
+  background-color: #9043c6;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border: none !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
 }

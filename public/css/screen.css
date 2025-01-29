@@ -1,17 +1,85 @@
 /* line 17, ../../../../../Users/fred/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,7 +95,8 @@ body {
 }
 
 /* line 22, ../../../../../Users/fred/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -38,18 +107,24 @@ table {
 }
 
 /* line 26, ../../../../../Users/fred/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
 /* line 28, ../../../../../Users/fred/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
+q,
+blockquote {
   quotes: none;
 }
 /* line 101, ../../../../../Users/fred/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
@@ -60,7 +135,18 @@ a img {
 }
 
 /* line 114, ../../../../../Users/fred/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
@@ -71,16 +157,19 @@ body {
 
 /* line 10, ../sass/screen.sass */
 #page-title {
-  color: #666666;
-  background-color: #f8f8f8;
+  color: #ffffff;
   font-size: 3rem;
   margin: 1rem 1rem 0 0;
   padding: 1rem 2rem 0 2rem;
   text-shadow: 0 1px 1px white;
+  border-bottom: 4px solid #f4be27;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 /* line 19, ../sass/screen.sass */
-.del-btn, .del-btn-edit {
+.del-btn,
+.del-btn-edit {
   display: inline;
   float: right;
   background: url("/public/images/delete.png") no-repeat bottom left;
@@ -104,43 +193,62 @@ body {
 }
 
 /* line 38, ../sass/screen.sass */
-.item, .item-new {
+.item,
+.item-new {
   overflow: hidden;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 6px 6px 6px 6px;
   list-style: none outside none;
   margin: 0.75rem;
   padding: 0.75rem;
-  width: 25rem;
+  width: 39rem;
   text-shadow: 1px 1px 0 white;
 }
 
 /* line 49, ../sass/screen.sass */
-.item:hover, .item-new:hover {
+.item:hover,
+.item-new:hover {
   border-color: #9be0f9;
   box-shadow: 0 0 5px #a6d5fd;
 }
 
 /* line 53, ../sass/screen.sass */
 .item-new {
-  padding: 0.5rem;
-  width: 25.5rem;
+  padding: 1rem;
+  width: 39rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* line 57, ../sass/screen.sass */
-.input, .update-input {
-  border: 1px solid #cccccc;
+.input,
+.update-input {
   color: #666666;
   font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-  font-size: 15px;
-  width: 25rem;
+  font-size: 1.2rem;
   height: 2rem;
+  border: 3px solid transparent;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.input:focus,
+.update-input:focus {
+  border: 3px solid transparent;
+  border-radius: 6px !important;
+  border-image: linear-gradient(45deg, #471694, #ff00ff, #ff1493);
+  border-image-slice: 1;
+  outline: none;
 }
 
 /* line 66, ../sass/screen.sass */
 .update-input {
-  width: 220px;
+  width: 100%;
 }
 
 /* line 69, ../sass/screen.sass */
@@ -171,6 +279,7 @@ body {
 .update-form {
   display: inline;
   float: left;
+  width: 100%;
 }
 
 /* line 89, ../sass/screen.sass */
@@ -249,8 +358,16 @@ body {
 }
 
 .patch-header {
+  width: 100vw;
+  min-height: 25vh;
   display: flex;
-  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://snyk.io/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Fsnyk%2Fimage%2Fupload%2Fv1723050301%2Fwebsite-heroes%2Fbackground-images%2Fhero-homepage-2024.jpg&w=2560&q=75");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .snyk-patch {
@@ -263,4 +380,29 @@ body {
   text-decoration: none;
   color: #666666;
   margin: 0 1rem 0 1rem;
+}
+
+/* My Custom CSS*/
+
+.btn_return {
+  margin-top: 2.5rem;
+  background-color: #145deb;
+  border: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 28px;
+}
+
+.btn_return a {
+  background-color: #145deb;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
 }

@@ -208,8 +208,51 @@ body {
 
 /* line 32, ../sass/screen.sass */
 #list {
+  margin-top: 1rem;
+  width: 80vw;
   padding: 2rem 0 0 0;
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background-color: #eeeeee;
+}
+
+#list form {
+  width: 50%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 3rem 0;
+}
+.login-container input {
+  border: 1px solid #eeeeee;
+}
+
+.login-container center {
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+.login-container input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #9043c6;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border: none !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
 }
 
 /* line 38, ../sass/screen.sass */
